@@ -1,0 +1,13 @@
+
+Изучаем стратегию генерации ID - Table.
+//Создаем таблицу генерации.
+CREATE TABLE APP_SEQ_STORE
+(
+ APP_SEQ_NAME VARCHAR(255) NOT NULL,
+ APP_SEQ_VALUE BIGINT NOT NULL,
+ PRIMARY KEY(APP_SEQ_NAME)
+);
+
+// Создаем строку для сущности GEN_TABLE
+INSERT INTO APP_SEQ_STORE VALUES ('GEN_TABLE.GEN_TABLE_PK', 0);
+
